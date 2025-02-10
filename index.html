@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Bazar</title>
+    <!-- DaisUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .sora {
+        font-family: "Sora", serif;
+      }
+    </style>
+    <!-- font icon -->
+    <script
+      src="https://kit.fontawesome.com/c541da3e45.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- tailwind setup -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              "green-primary": "#179800",
+              "bike-primary": "#E76F51",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <header class="w-full bg-[#EFEBE3]">
+      <div class="container mx-auto">
+        <!-- Navbar -->
+        <nav class="p-7">
+          <div class="flex justify-between p-7 rounded-lg">
+            <div>
+              <img src="c2-assets/logo-header.png" alt="" />
+            </div>
+            <div class="hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <div class="hidden lg:flex justify-center items-center gap-5">
+              <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+              <i class="fa-solid fa-cart-shopping text-2xl"></i>
+              <button class="border border-green-500 p-3 rounded-md">
+                Login
+              </button>
+              <button class="btn btn-success text-white">Success</button>
+            </div>
+            <div class="lg:hidden flex justify-end">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    class="inline-block h-5 w-5 stroke-current"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Freshness Section -->
+        <div class="container mx-auto mt-7 mb-7 text-center">
+          <h1 class="font-semibold text-5xl">
+            Freshness You
+            <span class="text-green-primary">Can <br />Count</span> On, Prices
+            You’ll Love!
+          </h1>
+          <p class="text-xl mt-4">
+            Shop your daily essentials at unbeatable prices. From fresh produce
+            to pantry <br />staples, we’ve got you covered every day!
+          </p>
+          <div class="flex justify-center mt-6">
+            <img src="c2-assets/hero-vegetables.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- services -->
+      <section class="container mx-auto mt-15 mb-20 bg-wh">
+        <h1 class="text-green-primary font-semibold text-4xl py-10">
+          services
+        </h1>
+        <!-- cards -->
+        <div class="grid grid-cols-1 lg:grid-cols-3">
+          <!-- card-1 -->
+          <div class="card bg-[#EFEBE3] w-96">
+            <figure class="px-10 pt-10">
+              <img
+                class="bg-white p-5 rounded-full"
+                src="c2-assets/service.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">24/7 Services</h2>
+              <p>
+                Reliable 24/7 services available anytime, anywhere. Whether day
+                or night, we are here to assist you with seamless support and
+                quick solutions."
+              </p>
+            </div>
+          </div>
+          <!-- card-2 -->
+          <div class="card bg-[#EFEBE3] w-96">
+            <figure class="px-10 pt-10">
+              <img
+                class="bg-white p-5 rounded-full"
+                src="c2-assets/delivery.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Fast Delivery</h2>
+              <p>
+                Experience fast and reliable delivery, ensuring your orders
+                reach you on time, every time."
+              </p>
+            </div>
+          </div>
+          <!-- card-3 -->
+          <div class="card bg-[#EFEBE3] w-96">
+            <figure class="px-10 pt-10">
+              <img
+                class="bg-white p-5 rounded-full"
+                src="c2-assets/healthy.png"
+                alt="Shoes"
+                class="rounded-xl"
+              />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">2Healthy Products</h2>
+              <p>
+                We offer a wide range of healthy products, carefully selected to
+                support your well-being and nutrition.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
